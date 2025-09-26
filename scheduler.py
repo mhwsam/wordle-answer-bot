@@ -1,5 +1,6 @@
 import yaml
 from scripts.wordle import run
+
 from scripts.render import render
 from pathlib import Path
 
