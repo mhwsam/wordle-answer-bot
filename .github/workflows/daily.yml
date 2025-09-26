@@ -1,0 +1,29 @@
+name: Daily Wordle Answer
+
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 12:00 UTC daily (7 AM ET)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scheduler.py
+      - name: Commit & Push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config user.name "Daily Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add output/ data/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Wordle update"
+          git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref_name }}
