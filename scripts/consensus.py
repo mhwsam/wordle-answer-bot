@@ -10,7 +10,9 @@ def normalize(word):
     m = re.search(r"[a-z]{5}", w)
     return m.group(0) if m else None
 
-def weighted_consensus(candidates, threshold=2.0):
+# def weighted_consensus(candidates, threshold=2.0):
+def weighted_consensus(candidates, threshold=1.0):
+
     tally = defaultdict(float)
     explain = defaultdict(list)
     for c in candidates:
