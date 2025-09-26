@@ -1,8 +1,8 @@
 import yaml
-from scripts.wordle import run
-
+from scripts.wordle import run   # fine as-is, because scheduler.py is at repo root
 from scripts.render import render
 from pathlib import Path
+
 
 with open("config/games.yaml") as f:
     config = yaml.safe_load(f)

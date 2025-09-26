@@ -3,7 +3,8 @@ from datetime import date, datetime
 from pathlib import Path
 from .fetch import get
 
-from consensus import weighted_consensus
+from .consensus import weighted_consensus
+
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output"
