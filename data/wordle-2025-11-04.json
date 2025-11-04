@@ -1,0 +1,43 @@
+{
+  "game": "wordle",
+  "date": "2025-11-04",
+  "answer": null,
+  "candidates": [
+    {
+      "name": "toms_guide",
+      "value": "where",
+      "weight": 1.4
+    },
+    {
+      "name": "techradar",
+      "value": "doesn",
+      "weight": 1.3
+    },
+    {
+      "name": "nme",
+      "value": null,
+      "weight": 1.2
+    }
+  ],
+  "consensus": {
+    "scores": {
+      "where": 1.4,
+      "doesn": 1.3
+    },
+    "explain": {
+      "where": [
+        {
+          "source": "toms_guide",
+          "w": 1.4
+        }
+      ],
+      "doesn": [
+        {
+          "source": "techradar",
+          "w": 1.3
+        }
+      ]
+    }
+  },
+  "generated_at": "2025-11-04T12:29:50.407298Z"
+}
