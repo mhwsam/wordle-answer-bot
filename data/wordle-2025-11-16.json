@@ -1,0 +1,43 @@
+{
+  "game": "wordle",
+  "date": "2025-11-16",
+  "answer": null,
+  "candidates": [
+    {
+      "name": "toms_guide",
+      "value": "armed",
+      "weight": 1.4
+    },
+    {
+      "name": "techradar",
+      "value": "still",
+      "weight": 1.3
+    },
+    {
+      "name": "nme",
+      "value": null,
+      "weight": 1.2
+    }
+  ],
+  "consensus": {
+    "scores": {
+      "armed": 1.4,
+      "still": 1.3
+    },
+    "explain": {
+      "armed": [
+        {
+          "source": "toms_guide",
+          "w": 1.4
+        }
+      ],
+      "still": [
+        {
+          "source": "techradar",
+          "w": 1.3
+        }
+      ]
+    }
+  },
+  "generated_at": "2025-11-16T12:24:17.830421Z"
+}
