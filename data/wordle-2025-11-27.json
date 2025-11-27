@@ -1,0 +1,36 @@
+{
+  "game": "wordle",
+  "date": "2025-11-27",
+  "answer": null,
+  "candidates": [
+    {
+      "name": "toms_guide",
+      "value": null,
+      "weight": 1.4
+    },
+    {
+      "name": "techradar",
+      "value": "silly",
+      "weight": 1.3
+    },
+    {
+      "name": "nme",
+      "value": null,
+      "weight": 1.2
+    }
+  ],
+  "consensus": {
+    "scores": {
+      "silly": 1.3
+    },
+    "explain": {
+      "silly": [
+        {
+          "source": "techradar",
+          "w": 1.3
+        }
+      ]
+    }
+  },
+  "generated_at": "2025-11-27T12:29:24.873943Z"
+}
