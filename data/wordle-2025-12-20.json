@@ -1,0 +1,36 @@
+{
+  "game": "wordle",
+  "date": "2025-12-20",
+  "answer": null,
+  "candidates": [
+    {
+      "name": "toms_guide",
+      "value": null,
+      "weight": 1.4
+    },
+    {
+      "name": "techradar",
+      "value": "about",
+      "weight": 1.3
+    },
+    {
+      "name": "nme",
+      "value": null,
+      "weight": 1.2
+    }
+  ],
+  "consensus": {
+    "scores": {
+      "about": 1.3
+    },
+    "explain": {
+      "about": [
+        {
+          "source": "techradar",
+          "w": 1.3
+        }
+      ]
+    }
+  },
+  "generated_at": "2025-12-20T12:26:34.731640Z"
+}
